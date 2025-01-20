@@ -22,3 +22,31 @@ input {
     font-family: inherit;
     font-size: 100%;
 }
+
+li {
+    list-style-type: none;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+}
+
+header {
+    grid-area: header;
+    background-color: var(--pure-white-color);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--blue-color);
+}
+
+main {
+    grid-area: main;
+    background-color: var(--gray-color);
+}
