@@ -45,15 +45,27 @@ header {
     grid-area: sidebar;
     background-color: var(--blue-color);
     color: var(--pure-white-color);
-    padding: 20px;
+    padding: 15px;
     font-weight: bold;
+}
 
-    display: flex;
-    flex-direction: column;
+.sidebar > div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.sidebar > div:not(:first-of-type) {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.sidebar > div > div {
+    justify-self: center;
 }
 
 .dashboard {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .dashboard-svg {
