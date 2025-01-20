@@ -44,6 +44,73 @@ header {
 .sidebar {
     grid-area: sidebar;
     background-color: var(--blue-color);
+    color: var(--pure-white-color);
+    padding: 20px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    font-size: 1.5rem;
+}
+
+.dashboard-svg {
+    background-image: url('./svgs/view-dashboard.svg');
+    width: 50px;
+    height: 50px;
+    filter: invert(1) brightness(100%);
+}
+
+.home-svg,
+.profile-svg,
+.messages-svg,
+.history-svg,
+.tasks-svg,
+.communities-svg,
+.settings-svg,
+.support-svg,
+.privacy-svg {
+    width: 25px;
+    height: 25px;
+    filter: invert(1) brightness(100%);
+}
+
+.home-svg {
+    background-image: url('./svgs/home.svg');
+}
+
+.profile-svg {
+    background-image: url('./svgs/card-account-details.svg');
+}
+
+.messages-svg {
+    background-image: url('./svgs/message-reply.svg');
+}
+
+.history-svg {
+    background-image: url('./svgs/clock-time-three.svg');
+}
+
+.tasks-svg {
+    background-image: url('./svgs/file-multiple.svg');
+}
+
+.communities-svg {
+    background-image: url('./svgs/account-group.svg');
+}
+
+.settings-svg {
+    background-image: url('./svgs/cog.svg');
+}
+
+.support-svg {
+    background-image: url('./svgs/help-box.svg');
+}
+
+.privacy-svg {
+    background-image: url('./svgs/shield-check.svg');
 }
 
 main {
