@@ -7,3 +7,18 @@
     --orange-color: #F0B429;
     --pure-black-color: #000000;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--system-ui-font);
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+}
