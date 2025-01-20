@@ -16,11 +16,16 @@
 
 body {
     font-family: var(--system-ui-font);
+    letter-spacing: -1px;
 }
 
 input {
     font-family: inherit;
     font-size: 100%;
+    width: 700px;
+    border-radius: 20px;
+    background-color: var(--gray-color);
+    border: none;
 }
 
 li {
@@ -39,6 +44,66 @@ li {
 header {
     grid-area: header;
     background-color: var(--pure-white-color);
+}
+
+.notification-svg {
+    background-image: url('./svgs/bell-ring-outline.svg');
+    width: 25px;
+    height: 25px;
+}
+
+.user-svg {
+    background-image: url('./avatars/avataaars.svg');
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.user-account > p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.another-user-svg {
+    background-image: url('./avatars/avataaars.svg');
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.another-user-account > p:last-of-type {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.another-user-account > p {
+    font-weight: bold;
+}
+
+.search-svg {
+    background-image: url('./svgs/magnify.svg');
+    width: 25px;
+    height: 25px;
+}
+
+.header-searchbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+header li {
+    width: 120px;
+    height: 50px;
+    background-color: var(--blue-color);
+    color: var(--pure-white-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+
+    display: grid;
+    place-items: center;
 }
 
 .sidebar {
