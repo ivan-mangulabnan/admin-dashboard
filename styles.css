@@ -257,7 +257,7 @@ main {
     padding-left: 1rem;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 1rem;
 }
 
@@ -291,7 +291,54 @@ main > div > p {
 
 .items {
     height: 200px;
+    padding: 20px 10px 10px 20px;
     background-color: var(--pure-white-color);
     border-left: .5rem solid var(--orange-color);
     border-radius: .6rem;
+    box-shadow: 3px 3px 4px 2px var(--gray-shadow);
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.items li:first-of-type {
+    background-image: url('./svgs/star-plus-outline.svg');
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+.items li:nth-child(2) {
+    background-image: url('./svgs/eye-plus-outline.svg');
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+}
+
+.items li:nth-child(3) {
+    background-image: url('./svgs/source-fork.svg');
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+}
+
+.items ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.icons {
+    justify-items: end;
+    padding-right: 20px;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--pure-black-color);
+}
+
+.text p:last-of-type {
+    color: gray;
 }
